@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World");
+    int i;
+    if(1) {
+        printf("\nhi ");
+        goto label1;
+        label2:printf("\nlabel2 in if part ");
+    }
+    else {printf("\nHello");
+        goto label2;
+        label1:printf("\nlabel 1 in else part");
+    };
+    return 0;
+}
